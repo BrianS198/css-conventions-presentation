@@ -59,6 +59,11 @@ dd { text-align: right; }
 
 .reveal p { margin: 1em 0; }
 
+    .reveal .small-text { 
+        margin-top: 0;
+        font-size: .75em; 
+    }
+
 .reveal code { border: solid 5px #2D7591; }
 
 /*********************************************

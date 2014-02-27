@@ -68,7 +68,7 @@ However, it's a small price to pay for a more guaranteed way to keep down specif
 	</div>
 </div>
 
-<p class="fragment" data-fragment-index="3">
-	Despite the typography of the font being all caps, the actual content was put in all caps to
+<p class="fragment small-text" data-fragment-index="3">
+	*Despite the typography of the font being all caps, the actual content was put in all caps to
 	demonstrate Jim's neanderthal language in the best way possible.
 </p>
