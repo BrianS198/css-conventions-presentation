@@ -12,7 +12,14 @@
 
 /**
  * Solarized colors by Ethan Schoonover
+ * Heavily modified by Brian Simpson
  */
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 html * {
   color-profile: sRGB;
   rendering-intent: auto; }
@@ -121,6 +128,16 @@ dd { text-align: right; }
 	border: none;
 	box-shadow: none;
 }
+
+	.reveal .jim._is-disappoint {
+		width: 35%;
+		height: auto;
+	}
+	
+	.reveal .jim._is-confused {
+		width: 50%;
+		height: auto;
+	}
 
 /*********************************************
  * NAVIGATION CONTROLS
