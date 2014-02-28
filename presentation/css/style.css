@@ -196,7 +196,7 @@ dd { text-align: right; }
  *UpFront
  */
 body > div.reveal:after {
-  content: 'irc: #upfrontwichita';
+  content: 'irc: #devict';
   font-style: normal;
   position: absolute;
   bottom: 10px;
