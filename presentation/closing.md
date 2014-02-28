@@ -17,7 +17,7 @@ I use a spin-off of BEM for naming purposes.
 
 ~~~css
 /* BEM */
-.blockname--child__active {}
+.blockname__child--active {}
 
 /* Me */
 .blockName-child_active {}

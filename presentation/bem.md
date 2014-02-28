@@ -21,7 +21,7 @@ Ergo, '__' is linked to an element and '--' is linked to a modifier.
 .tweet__avatar {}   /* Element */
 .tweet__name {}     /* Element */
 .tweet__option {}   /* Element */
-.tweet__visible {}  /* Modifier */
+.tweet--visible {}  /* Modifier */
 ~~~
 ![Tweet example](img/twitter-module.png)
 
@@ -29,9 +29,11 @@ Ergo, '__' is linked to an element and '--' is linked to a modifier.
 # Why double characters?
 ~~~css
 /* Why this: */
-.tweet__avatar{}
+.tweet--visible{}
 /* Instead of this: */
-.tweet_avatar{}
+.tweet-visible{}
+/* Because of this: */
+.tweet-box-visible{}
 ~~~
 The alleged reason is because you can have hyphen delimited block names and a single
 character for elements or modifiers would not be enough to distinguish them apart.

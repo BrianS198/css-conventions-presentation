@@ -44,7 +44,7 @@ because they are typically singular.  Example:
 However, he pushes for classes on minor layout elements or re-useable chunks, like a grid.
 He also uses an l- prefix for these minor elements.
 ~~~css
-l-grid {
+.l-grid {
 	width: 100%;
 	/* Clearfix stuff here */
 }
@@ -67,6 +67,7 @@ Similarly to OOCSS, Jonathan suggests you avoid element selectors.
 /* GOOD */
 .comment { color #FFF; }
 ~~~
+
 If you use selectors with basic elements, you don't know what may be added or 
 removed from future editions of your website, so these rules may become
 obsolete with future additions.
@@ -109,9 +110,9 @@ the potential for multiple themes, it would be advantageous to separate theme at
 colors or images.
 ~~~css
 /* Inside of module-name.css */
-.comment { text-align: center; }
+.comment { border: 1px solid; }
 /* Inside of theme-name.css */
-.comment { color: #FFF; }
+.comment { border-color: #FFF; }
 ~~~
 
 --
