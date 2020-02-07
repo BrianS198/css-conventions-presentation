@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Hi Mom!</title>
+
+    <meta name="description" content="TODO">
+    <meta name="author" content="TODO">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="lib/reveal.js/css/reveal.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/reveal.js/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="lib/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <!-- A markdown document can provide part of or the the entire presentation -->
+        <!-- With this setup three blank links separate slides. Two blanks separate nested "vertical" slides -->
+
+        <section>
+			<h1>CSS Standards and Conventions</h1>
+			<h3>By Emma LaRoyce "STOMPIN' FACES" Bukacek Esquire</h3>
+			<img src="img/upfront-logo.svg" alt="UpFront Wichita">
+		</section>
+		
+        <section data-transition="cube">
+			<h1>Emma is a jerk.</h1>
+		</section>
+		
+		<section data-transition="zoom">
+			<h2>But really, I'm Emma Bukacek.</h2>
+			<div class="grid">
+				<div class="col-1-2">
+					<dl>
+						<dt class="fragment" data-fragment-index="1" data-background-transition="slide">Twitter</dt>
+							<dd class="fragment" data-fragment-index="1">@emmabukacek</dd>
+						<dt class="fragment" data-fragment-index="2">Github</dt>
+							<dd class="fragment" data-fragment-index="2">emmabukacek</dd>
+						<dt class="fragment" data-fragment-index="3">Myspace</dt>
+							<dd class="fragment" data-fragment-index="3">BenSolumRules</dd>
+						<dt class="fragment" data-fragment-index="4">LiveJournal</dt>
+							<dd class="fragment" data-fragment-index="4">JimmyCrackedCorn</dd>
+					</dl>
+				</div>
+				<div cclass="col-1-2">
+					<img class="fragment shootleft jim" data-fragment-index="5" src="img/jim-left.png">
+					<h2 class="fragment shootleft" data-fragment-index="5">JIM RICE APPROVES</h2>
+				</div>
+			</div>
+		</section>
+
+        <section>
+			<section>
+				<h1>Why Naming Conventions</h1>
+				<p class="fragment" data-fragment-index="1">Because CSS kinda sucks.</p>
+				<p class="fragment" data-fragment-index="2">Or.. at least "I" think so.  Bear with me while I explain this..</p>
+			</section>
+			
+			<section>
+				<h1>CSS is..</h1>
+				<div class="grid">
+					<div class="col-1-2">
+						<img class="fragment shootright jim is-disappoint" data-fragment-index="5" src="img/jim-disappoint.png">
+						<h2 class="fragment shootright" data-fragment-index="5">Jim is disappoint in CSS.</h2>
+					</div>
+					<div class="col-1-2">
+						<ul>
+							<li class="fragment" data-fragment-index="1">Counter-intuitive</li>
+							<li class="fragment" data-fragment-index="2">Not entirely cross-browser compliant. (Albeit, I'll admit this is quickly changing.)</li>
+							<li class="fragment" data-fragment-index="3">No inherit logic.</li>
+							<li class="fragment" data-fragment-index="4">All this being said, CSS still rules in a lot of ways.  No language is without it's faults.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			
+			<section>
+				<h1>But it's okay!</h1>
+				<p>This is why we try to use convention.</p>
+			</section>
+		</section>
+		
+		<section>
+			<section data-transition="linear">
+				<h1>Refresher Course</h1>
+			</section>
+			
+			<section data-transition="linear">
+				<h1>Specificity</h1>
+				<ul>
+					<li>This is the quality or state of being specific.</li>
+					<li>In the case of CSS, the specificity of one or more competing CSS rules determines which rule should be applied to your markup.</li>
+				</ul>
+			</section>
+			
+			<section data-markdown="spec-example.md" data-separator="^---" data-vertical="^--"></section>
+			<section data-transition="linear" data-markdown="spec-example2.md" data-separator="^---" data-vertical="^--"></section>
+			
+			<section data-transition="linear">
+				<h1>Axioms</h1>
+				<ul>
+					<li>Avoid the !important property as much as possible.  Or never use it.</li>
+					<li>Never use IDs for styling.</li>
+					<li>Do not use inline styling.</li>
+					<li>Never prefix ids or classes with elements.</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h1>Standards & Conventions</h1>
+				<ul class="_no-bullets">
+					<li><a href="http://oocss.org/">OOCSS</a> - Stubornella (Nicole Sullivan)</li>
+					<li><a href="http://smacss.com/">SMACSS</a> - Jonathan Snook</li>
+					<li><a href="http://bem.info/">BEM</a> - Yandex</li>
+					<li><a href="http://coding.smashingmagazine.com/2013/10/21/challenging-css-best-practices-atomic-approach/">ACSS</a> - Not sure..?</li>
+				</ul>
+				<p>There are plenty more, but these are the ones I will be discussing today.</p>
+			</section>
+		</section>
+			
+		<section data-background="#F82F2F" data-markdown="oocss.md" data-transition="fade" data-separator="^---" data-vertical="^--"></section>
+		<section data-background="#1A6B3B" data-markdown="smacss.md" data-separator="^---" data-vertical="^--"></section>
+		<section data-background="#EBB440" data-markdown="bem.md" data-separator="^---" data-vertical="^--"></section>
+		<section data-background="#6D6D6D" data-markdown="acss.md" data-separator="^---" data-vertical="^--"></section>
+		<section data-markdown="closing.md" data-separator="^---" data-vertical="^--"></section>
+		
+      </div>
+    </div>
+
+    <script src="lib/reveal.js/lib/js/head.min.js"></script>
+    <script src="lib/reveal.js/js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'lib/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'lib/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'lib/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'lib/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'lib/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
